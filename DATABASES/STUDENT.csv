@@ -1,4 +1,4 @@
-"id";"first_name";"last_name";"DATE";"email"
-1;"olivie";"donfack";"1997-09-13";"on@gmail.com"
-2;"brum";"bernand";"1998-10-23";"en@gmail.com"
-3;"kevin";"samba";"1995-12-23";"an@yahoo.com"
+id,first_name,last_name,DATE,email
+1,olivie,donfack,1997-09-13,on@gmail.com
+2,brum,bernand,1998-10-23,en@gmail.com
+3,kevin,samba,1995-12-23,an@yahoo.com
