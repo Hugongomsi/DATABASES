@@ -8,6 +8,7 @@
     <title>ma first page</title>
 </head>
 <body>
+
   <div id="users">
      </div>
     <div id="messages">
@@ -16,7 +17,7 @@
          <div class="infos">
              <p><strong>{{user.username}}</strong></p>
              <p>{{message}}</p>
-             <span class="date">{{h}}:{{m}}</span>  
+             <span class="date">{{h}}:{{m}}</span>
          </div>
       </div>
     </div>
@@ -30,16 +31,16 @@
             <input type="text" name="login" id="username" placeholder="new_name">
             <input type="email" name="email" id="email" placeholder="E-mail">
             <input type="submit" value="send">
-         </form>   
+         </form>
     </div>
     <form action="" id="form">
         <input type="text" id="message" class="text"/>
         <input type="submit" id="send" value="send my message!!" class="submit"/>
       </form>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="//js/mustache.js"></script>      
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="mustache.js"></script>
   <script src="http://localhost:1337/socket.io/socket.io.js"></script>
-    
-  <script src="js/client.js"></script>
+
+  <script src="client.js"></script>
 </body>
 </html>
