@@ -5,7 +5,7 @@
 
 
     $('#loginform').submit((event)=>{
-         event.prevenDefaut();
+         event.preventDefault();
          socket.emit('login',{
              username :$('#username').val(),
              email     :$('#email').val()
@@ -16,7 +16,7 @@
     });
 /* send the message */
 $('#form').submit((event)=>{
-    event.prevenDefaut();
+    event.preventDefault();
     socket.emit('newmsg',{message:$('#message').val() })
     $('#message').val('');
     $('#message').focus();
@@ -27,11 +27,11 @@ socket.on('newmsg',(message)=>{
     $('#message').append('<div class="message">'+Mustache.render(msgtpl,message)+ '</div>')
 
 })
-    //manager of connect for user 
+    //manager of connect for user
     socket.on('newusr',(user)=>{
         $('#users').append('<img src ="'+user.avatar+'"id="' +user.id +'">');
-        alert('new user');    
-    }) 
+        alert('new user');
+    })
     socket.on('disusr',(user)=>{
         $('#' + user.id).remove();
     })
